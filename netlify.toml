@@ -1,8 +1,11 @@
 [build]
   command = "npm run build"
-  publish = "/"
+  commandOrigin = config
+  publish = "/opt/build/repo"
+  publishOrigin = config
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
   status = 200
+  to = "/index.html"
+  
